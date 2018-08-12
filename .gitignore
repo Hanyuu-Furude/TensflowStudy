@@ -1,0 +1,9 @@
+/CodeChache/Debug
+/CodeChache/.vs
+/Debug
+/.vs
+/CodeChache/x64
+*.un~
+*.cpp~
+*.h~
+*.py~
