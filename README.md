@@ -6,13 +6,14 @@
 ## Note link
 ***
 ### Tensorflow
-|Date|Title|Details|
+|Date|Content|Details|
 |-----|----|-------|
+|2018.09.14|[Leadin](studyNotes/tensorflow/Leadin.md)|一些基本的操作符备忘|
 ### Python
-|Date|Title|Details|
+|Date|Content|Details|
 |-----|----|-------|
 ### Deep learning
-|Date|Title|Details|
+|Date|Content|Details|
 |-----|----|-------|
 
 ## Log
