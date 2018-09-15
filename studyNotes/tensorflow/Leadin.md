@@ -1,5 +1,6 @@
 # Leadin
-* 演示程序请参照Leadin.py
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
+* 演示程序请参照[Leadin.py](Leadin.py)
 
 ``` py
 import tensorflow as tf 
@@ -53,3 +54,7 @@ squared_deltas = tf.square(linear_model - y)    #损失函数(Y-y)^2
 loss = tf.reduce_sum(squared_deltas)            #梯度下降，减小Loss
 print(sess.run(loss, {x: [1,2,3,4], y: [0, -1, -2, -3]}))
 ```
+<img src="http://chart.googleapis.com/chart?cht=tx&chl=\Large x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}" style="border:none;">
+<img src="http://www.forkosh.com/mathtex.cgi?y=ax+b">
+
+$$x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}$$
