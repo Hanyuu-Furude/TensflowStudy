@@ -31,3 +31,25 @@ print('node2', sess.run(node2))
     print(sess.run(adder_node, {a:3, b:4.5}))
     print(sess.run(adder_node, {a: [1,3], b: [2,4]}))
 ```
+* 变量
+``` py
+W = tf.Variable([.3], dtype=tf.float32)
+b = tf.Variable([-.3], dtype=tf.float32)
+x = tf.placeholder(tf.float32)
+linear_model = W*x + b
+```
+* 初始化变量
+``` py
+init = tf.global_variables_initializer()\
+```
+* 求值
+``` py
+print(sess.run(linear_model, {x: [1,2,3,4]}))
+```
+* 损失函数
+``` py
+y = tf.placeholder(tf.float32)
+squared_deltas = tf.square(linear_model - y)    #损失函数(Y-y)^2
+loss = tf.reduce_sum(squared_deltas)            #梯度下降，减小Loss
+print(sess.run(loss, {x: [1,2,3,4], y: [0, -1, -2, -3]}))
+```
