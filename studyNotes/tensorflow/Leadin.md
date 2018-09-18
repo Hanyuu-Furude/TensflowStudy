@@ -46,6 +46,10 @@ init = tf.global_variables_initializer()\
 ``` py
 print(sess.run(linear_model, {x: [1,2,3,4]}))
 ```
+* 降维求和
+··· py
+loss = tf.reduce_sum()
+```
 * 损失函数
 ``` py
 y = tf.placeholder(tf.float32)
@@ -64,4 +68,9 @@ for i in range(1000):
 print(sess.run([W, b]))                             #现实更新后的W,b的值
 ```
 
-<img src="http://chart.googleapis.com/chart?cht=tx&chl=\Large x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}" style="border:none;">
+
+<img src="http://www.forkosh.com/mathtex.cgi? \Large x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}">
+
+> Google's
+>
+> <img src="http://chart.googleapis.com/chart?cht=tx&chl=\Large x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}" style="border:none;">
