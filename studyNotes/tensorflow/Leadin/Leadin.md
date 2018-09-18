@@ -46,6 +46,10 @@ init = tf.global_variables_initializer()\
 ``` py
 print(sess.run(linear_model, {x: [1,2,3,4]}))
 ```
+* 结束会话
+``` py
+sess.close()
+```
 * 降维求和
 ··· py
 loss = tf.reduce_sum()
