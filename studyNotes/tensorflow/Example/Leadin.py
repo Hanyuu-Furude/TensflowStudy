@@ -41,5 +41,8 @@ for i in range(1000):
 	train_step.run(feed_dict={x: batch[0], y_: batch[1]})
 
 ## 评估模型
-correct_prediction=tf.equal(tf.argmax(y,1),tf.argmax(y_,1))
-
+correct_prediction = tf.equal(tf.argmax(y, 1), tf.argmax(y_, 1))
+# 计算精度
+accuracy=tf.reduce_mean(tf.cast(correct_prediction,"float"))
+# 计算测试集准确率
+print("Accuracy on test set: ",accuracy.eval(feed_dict={x:mnist.test.images,y_:mnist.test.labels}))
