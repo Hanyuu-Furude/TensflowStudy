@@ -83,8 +83,22 @@ for i in range(1000):
    #print(sess.run([W, b]))
 print(sess.run([W, b]))                             #现实更新后的W,b的值
 ```
+> * tf.argmax
+>``` py
+>tf.argmax(input, axis=None, name=None, dimension=None)
+>```
+>   此函数是对矩阵按行或列计算最大值
+>
+>  ### 参数
+>   * input：输入Tensor
+>   * axis：0表示按列，1表示按行
+>   * name：名称
+>   * dimension：和axis功能一样，默认axis取值优先。新加的字段
 
+返回：Tensor  一般是行或列的最大值下标向量 
 
+---
+以下是测试md区域
 <img src="http://www.forkosh.com/mathtex.cgi? \Large x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}">
 
 > Google's
