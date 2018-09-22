@@ -11,8 +11,9 @@
 |2018.09.14|2018.09.19|[基本操作](studyNotes/tensorflow/Leadin/Leadin.md)|一些基本的操作符备忘|
 |2018.09.18||[数据类型](studyNotes/tensorflow/Tensor/Tensor.md)|Tensor的数据类型和特殊Tensor类型|
 |2018.09.18||[计算设备管理](studyNotes/tensorflow/DeviceManage/DeviceManage.md)|一些关于设备管理的选项
-|2018.09.18||[常见问题](studyNotes/tensorflow/CommomQuestion/CommomQuestion.md)|那些踩过的坑 (；′⌒`)|
+|2018.09.18|2018.09.20|[常见问题](studyNotes/tensorflow/CommomQuestion/CommomQuestion.md)|那些踩过的坑 (；′⌒`)|
 |2018.09.19||[MNIST程序示例](studyNotes/tensorflow/Example/Leadin.py)|MNIST整体入门程序
+|2018.09.22||[MNIST with conv & pool](studyNotes/tensorflow/Example/MNIST_Conv&Pool.md)|是带卷积和池化层的MNIST啦
 ### Python
 |Created Date|Updated Date|Content|Details|
 |------------|------------|-------|-------|
