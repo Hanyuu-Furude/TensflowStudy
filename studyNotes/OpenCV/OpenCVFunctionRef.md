@@ -60,3 +60,61 @@ elif k == ord('s'): # wait for 's' key to save and exit
 ```
 
 >* *If you are using a 64-bit machine, you will have to modify ```k = cv2.waitKey(0)``` line as follows : ```k = cv2.waitKey(0) & 0xFF```*
+
+## 5.视频写入
+> 由于暂时没有需求，本部分暂时未深入，[跳转到相关链接](https://opencv-python-tutroals.readthedocs.io/en/latest/py_tutorials/py_gui/py_video_display/py_video_display.html)
+
+## 6.绘画操作
+### common arguments
+>* img : The image where you want to draw the shapes
+>* color : Color of the shape. for BGR, pass it as a tuple, eg: (255,0,0) for blue. For grayscale, just pass the scalar value.
+>* thickness : Thickness of the line or circle etc. If -1 is passed for closed figures like circles, it will fill the shape. default thickness = 1
+>* lineType : Type of line, whether 8-connected, anti-aliased line etc. By default, it is 8-connected. cv2.LINE_AA gives anti-aliased line which looks great for curves.
+
+
+* cv2.line()
+``` py
+import numpy as np
+import cv2
+
+# Create a black image
+img = np.zeros((512,512,3), np.uint8)
+
+# Draw a diagonal blue line with thickness of 5 px
+img = cv2.line(img,(0,0),(511,511),(255,0,0),5)
+```
+* cv2.circle()
+``` py
+img = cv2.circle(img,(447,63), 63, (0,0,255), -1)
+```
+* cv2.rectangle()
+``` py
+img = cv2.rectangle(img,(384,0),(510,128),(0,255,0),3)
+```
+* cv2.ellipse()
+``` py
+img = cv2.ellipse(img,(256,256),(100,50),0,0,180,255,-1)
+```
+>* To draw the ellipse, we need to pass several arguments. One argument is the center location (x,y). Next argument is axes lengths (major axis length, minor axis length). ```angle``` is the angle of rotation of ellipse in anti-clockwise direction. ```startAngle``` and ```endAngle``` denotes the starting and ending of ellipse arc measured in clockwise direction from major axis. i.e. giving values 0 and 360 gives the full ellipse. For more details, check the documentation of ```cv2.ellipse()```. Below example draws a half ellipse at the center of the image.
+
+*  cv2.polylines()
+``` py
+pts = np.array([[10,5],[20,30],[70,20],[50,10]], np.int32)
+pts = pts.reshape((-1,1,2))
+img = cv2.polylines(img,[pts],True,(0,255,255))
+```
+>* To draw a polygon, first you need coordinates of vertices. Make those points into an array of shape ```ROWSx1x2``` where ROWS are number of vertices and it should be of type ```int32```. Here we draw a small polygon of with four vertices in yellow color.
+>* If third argument is False, you will get a polylines joining all the points, not a closed shape.
+>* ```cv2.polylines()``` can be used to draw multiple lines. Just create a list of all the lines you want to draw and pass it to the function. All lines will be drawn individually. It is more better and faster way to draw a group of lines than calling ```cv2.line()``` for each line.
+* cv2.putText() 
+``` py
+font = cv2.FONT_HERSHEY_SIMPLEX
+cv2.putText(img,'OpenCV',(10,500), font, 4,(255,255,255),2,cv2.LINE_AA)
+```
+> To put texts in images, you need specify following things.
+>* Text data that you want to write
+>* Position coordinates of where you want put it (i.e. bottom-left corner where data starts).
+>* Font type (Check cv2.putText() docs for supported fonts)
+>* Font Scale (specifies the size of font)
+>* regular things like color, thickness, lineType etc. For better look, lineType = cv2.LINE_AA is recommended.
+
