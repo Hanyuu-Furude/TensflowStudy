@@ -17,7 +17,7 @@
 ### OpenCV [纯粹就是做项目时候自己的爬坑记录]
 |Created Date|Updated Date|Content|Details|
 |------------|------------|-------|-------|
-|2018.09.29||应该就这么一条记录|也懒得取名了|
+|2018.09.29|2018.10.02|[应该就这么一条记录](studyNotes/OpenCV/OpenCVFunctionRef.md)|也懒得取名了|
 |2018.09.29||[OpenCV安装传送门](https://docs.opencv.org/3.0-beta/doc/py_tutorials/py_setup/py_table_of_contents_setup/py_table_of_contents_setup.html#py-table-of-content-setup)|还真有第二条orz
 
 ### Python
