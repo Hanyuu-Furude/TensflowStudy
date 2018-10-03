@@ -2,7 +2,7 @@
 
 > ## 为什么cv2.waitkey(0)后要加 & 0xff
 > * 高位的2个字节由Shift, Control, Num lock等状态表示，为了消除他们的影响统一用& 0xff清除这些信息。
->* 原文\
+>* [原文摘录，戳我跳转](https://stackoverflow.com/questions/35372700/whats-0xff-for-in-cv2-waitkey1):\
 >The answers which have already been posted suggest that some of the unusual values obtained by waitKey are due to platform differences. Below, I propose that (at least on some platforms) the apparently odd behaviour of waitKey is due to keyboard modifiers. This post looks similar to Tomasz's answer because I initially wrote this as an edit, which was rejected.\
 >The keycodes returned by waitKey change depending on which modifiers are enabled. NumLock, CapsLock, and the Shift, Ctrl, and Alt keys all modify the keycode returned by waitKey by enabling certain bits above the two Least Significant Bytes. The smallest of these flags is Shift at 0x10000.\
 > A modified version of the script Tomasz posted is given below:
