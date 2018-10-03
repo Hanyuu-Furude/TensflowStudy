@@ -25,7 +25,7 @@
 ### Python
 |Created Date|Updated Date|Content|Details|
 |------------|------------|-------|-------|
-|2018.10.93||[Python 3.6](https://docs.python.org/3.6/)|官方文档
+|2018.10.03||[Python 3.6](https://docs.python.org/3.6/)|官方文档
 |这坑……没法填……|是真的没法填……|我也不知道写啥好……|删了吧……算了懒得删了……|
 ### Deep learning
 |Created Date|Updated Date|Content|Details|
@@ -33,7 +33,7 @@
 |2018.10.03||[deeplearningbook.org](http://www.deeplearningbook.org/)|这个不在GFW内|
 |2018.10.03||[deeplearningbook-chinese](https://github.com/exacity/deeplearningbook-chinese)|但是有热心大佬在GFW内翻译了|
 |2018.10.03||[李弘毅教授的Deep Learning课程页](https://hanyuufurude.github.io/DeepLearing.html)|本人整理，若您发现有更新请务必联系我，谢谢。|
-|2018.10.03||[来自网易云的李彦宏deep learning教程](http://mooc.study.163.com/smartSpec/detail/1001319001.htm)|吃我安利（就是没作业，土豪请走coursera）|
+|2018.10.03||[李彦宏的deep learning教程[网易云提供]](http://mooc.study.163.com/smartSpec/detail/1001319001.htm)|吃我安利（就是没作业，土豪请走coursera）|
 |暂时填不来|自己学的也还不多|也没有找到合适的插入公式的方法|哪位大佬有的话请务必联系我|
 
 ## Log
