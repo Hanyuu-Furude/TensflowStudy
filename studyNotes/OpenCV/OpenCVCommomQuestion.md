@@ -1,6 +1,10 @@
 # OpenCVCommomQuestion
 
-> ## 为什么cv2.waitkey(0)后要加 & 0xff
+> ## <font color=red>**使用VSCode运行openCV劝退事宜**</font>
+> 您若使用VSCode尝试Debug openCV-Python，<font color=red>我们**强烈**建议您立刻放弃这样的尝试</font>。因为目前VSCode插件pylint无法正常解析openCV-python.[详情请见VSCode团队官方issue](https://github.com/Microsoft/vscode/issues/46798)\
+>推荐使用[PyCharm](https://www.jetbrains.com/pycharm/)或者[Vim(高级玩家限定)](https://www.vim.org/)
+
+> ## Why ```cv2.waitkey(0) & 0xff```
 > * 高位的2个字节由Shift, Control, Num lock等状态表示，为了消除他们的影响统一用& 0xff清除这些信息。
 >* [原文摘录，戳我跳转](https://stackoverflow.com/questions/35372700/whats-0xff-for-in-cv2-waitkey1):\
 >The answers which have already been posted suggest that some of the unusual values obtained by waitKey are due to platform differences. Below, I propose that (at least on some platforms) the apparently odd behaviour of waitKey is due to keyboard modifiers. This post looks similar to Tomasz's answer because I initially wrote this as an edit, which was rejected.\
