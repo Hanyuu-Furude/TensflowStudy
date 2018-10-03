@@ -1,4 +1,7 @@
 # CommomQuestion
+> ## <font color=red>**使用VSCode运行openCV劝退事宜**</font>
+> 您若使用VSCode尝试Debug openCV-Python，<font color=red>我们**强烈**建议您立刻放弃这样的尝试</font>。因为目前VSCode插件pylint无法正常解析openCV-python.[详情请见VSCode团队官方issue](https://github.com/Microsoft/vscode/issues/46798)\
+>推荐使用[PyCharm](https://www.jetbrains.com/pycharm/)或者[Vim(高级玩家限定)](https://www.vim.org/)
 > ## 使用GPU计算
 >  若要使用Tensorflow-gpu，请检查您是否有**算力大于3的NVIDIA显卡**。
 >   * 查询显卡算力[地址](https://developer.nvidia.com/cuda-gpus#collapseOne)。
