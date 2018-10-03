@@ -20,6 +20,8 @@
 |2018.09.29||[OpenCV安装传送门](https://docs.opencv.org/3.0-beta/doc/py_tutorials/py_setup/py_table_of_contents_setup/py_table_of_contents_setup.html#py-table-of-content-setup)|还真有第二条orz(还悄咪咪的和1L换了个位置，没人发现吧)|
 |2018.09.29|2018.10.02|[基本函数参考](studyNotes/OpenCV/OpenCVFunctionRef.md)|应该就这么一条记录,也懒得取名了（我这是在哪？）|
 |2018.10.03||[基本操作参考](studyNotes/OpenCV/OpenCVBasicOperations.md)|再打一次1L的脸;P(唉，1L呢)|
+|2018.10.03||[常见问题](studyNotes/OpenCV/OpenCVCommomQuestion.md)|没有经历过踩坑是不会成长desu|
+
 
 
 ### Python
