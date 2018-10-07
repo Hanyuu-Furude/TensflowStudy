@@ -13,4 +13,3 @@ if k == 27:  # ESC
 	cv2.destroyAllWindows()
 elif k == ord('s'):
 	cv2.imwrite('Save.jpg', img)
- 
