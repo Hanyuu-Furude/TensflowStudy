@@ -27,6 +27,7 @@
 ### Python
 |Created Date|Updated Date|Content|Details|
 |------------|------------|-------|-------|
+|2018.10.07||[PythonFunctionRef](studyNotes/python/PythonFunctionRef/PythonFunctionRef.md)|还是写一个吧2333|
 |2018.10.03||[Python 3.6](https://docs.python.org/3.6/)|官方文档
 |这坑……没法填……|是真的没法填……|我也不知道写啥好……|删了吧……算了懒得删了……|
 ### Deep learning
