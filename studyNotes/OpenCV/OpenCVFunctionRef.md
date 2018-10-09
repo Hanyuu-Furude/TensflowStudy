@@ -118,3 +118,17 @@ cv2.putText(img,'OpenCV',(10,500), font, 4,(255,255,255),2,cv2.LINE_AA)
 >* Font Scale (specifies the size of font)
 >* regular things like color, thickness, lineType etc. For better look, lineType = cv2.LINE_AA is recommended.
 
+* ```cv2.cvtColor()```
+>Converts an image from one color space to another.  
+>* C++: void cvtColor(InputArray src, OutputArray dst, int code, int dstCn=0 ) 
+> *  Python: cv2.cvtColor(src, code[, dst[, dstCn]]) → dst  
+> *  C: void cvCvtColor(const CvArr* src, CvArr* dst, int code)  
+> * s  Python: cv.CvtColor(src, dst, code) → None  
+>
+>Parameters: 
+>* src – input image: 8-bit unsigned, 16-bit unsigned ( CV_16UC… ), or single-precision floating-point. 
+>* dst  – output image of the same size and depth as src. 
+>* code – color space conversion code (see the description below).  
+>* dstCn – number of channels in the destination image; if the parameter is 0, the number of the channels is derived automatically from src and code.
+>
+> The function converts an input image from one color space to another. In case of a transformation to-from RGB color space, the order of the channels should be specified explicitly (RGB or BGR). Note that the default color format in OpenCV is often referred to as RGB but it is actually BGR (the bytes are reversed). So the first byte in a standard (24-bit) color image will be an 8-bit Blue component, the second byte will be Green, and the third byte will be Red. The fourth, fifth, and sixth bytes would then be the second pixel (Blue, then Green, then Red), and so on.
