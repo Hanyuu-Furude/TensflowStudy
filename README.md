@@ -29,6 +29,8 @@
 |------------|------------|-------|-------|
 |2018.10.07||[PythonFunctionRef](studyNotes/python/PythonFunctionRef/PythonFunctionRef.md)|还是写一个吧2333|
 |2018.10.03||[Python 3.6](https://docs.python.org/3.6/)|官方文档
+|2018.10.09||[正则表达式入门](http://www.runoob.com/python3/python3-reg-expressions.html)|学一学还是有必要的哈(●ˇ∀ˇ●)|
+|2018.10.09||[Requests爬虫入门](https://blog.csdn.net/gyq1998/article/details/78583841)|爬虫……也是要爬一爬的(ง •_•)ง|
 |这坑……没法填……|是真的没法填……|我也不知道写啥好……|删了吧……算了懒得删了……|
 ### Deep learning
 |Created Date|Updated Date|Content|Details|
