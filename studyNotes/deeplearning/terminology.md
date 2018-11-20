@@ -18,3 +18,10 @@
 |prediction|预测|
 |label|标签/标记|
 |example|样例|
+|label space|标记空间|
+|classification|分类|
+|regression|回归|
+|binary classification|二分回归|
+|positive class|正类|
+|negative class|反类|
+|multi-class classification|多分类|
