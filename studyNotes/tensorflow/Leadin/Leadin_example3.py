@@ -1,6 +1,9 @@
 import tensorflow as tf
+import numpy as np
 # A custom model：客户自定义实现训练
 # Declare list of features, we only have one real-valued feature
+
+
 def model_fn(features, labels, mode):
     # Build a linear model and predict values
     W = tf.get_variable("W", [1], dtype=tf.float64)
