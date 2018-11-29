@@ -50,8 +50,16 @@
 | 2018.10.03 || [李彦宏的deep learning教程[网易云]](http://mooc.study.163.com/smartSpec/detail/1001319001.htm) | 吃我安利（就是没作业，土豪请走coursera） |
 | 暂时填不来 | 自己学的也还不多 | 也没有找到合适的插入公式的方法 | 哪位大佬有的话请务必联系我 |
 
+### Others
+| Created Date | Updated Date| Content| Details|
+| :- | :- | :- | :- |
+| 2018.11.29 || [markdown-Latex公式快速查阅](studyNotes/Others/markdownLatex.png) | 写文档也是很重要的. |
+
 ## Log
 ***
+> ### 2018/11/29
+> 开始写文档.jpg
+
 > ### 2018/11/20
 > 开始复习一波……（默默造表）
 
