@@ -1,16 +1,17 @@
-# Deep Learning 爬坑记录
-[![](https://img.shields.io/github/downloads/atom/atom/total.svg)](https://github.com/HanyuuFurude/TensorflowStudy/archive/master.zip)
-[![](https://img.shields.io/github/issues/HanyuuFurude/TensorflowStudy.svg)](https://github.com/HanyuuFurude/TensorflowStudy/issues)
-[![](https://img.shields.io/github/license/HanyuuFurude/TensorflowStudy.svg)](https://github.com/HanyuuFurude/TensorflowStudy/blob/master/LICENSE)
-[![GitHub stars](https://img.shields.io/github/stars/HanyuuFurude/TensorflowStudy.svg)](https://github.com/HanyuuFurude/TensorflowStudy/stargazers)
+# Hanyuu's tech log.
+[![](https://img.shields.io/github/downloads/atom/atom/total.svg)](https://github.com/HanyuuFurude/TechBlog/archive/master.zip)
+[![](https://img.shields.io/github/issues/HanyuuFurude/TechBlog.svg)](https://github.com/HanyuuFurude/TechBlog/issues)
+[![](https://img.shields.io/github/license/HanyuuFurude/TechBlog.svg)](https://github.com/HanyuuFurude/TechBlog/blob/master/LICENSE)
+[![GitHub stars](https://img.shields.io/github/stars/HanyuuFurude/TechBlog.svg)](https://github.com/HanyuuFurude/TechBlog/stargazers)
 
 ![](https://img.shields.io/badge/language-Python_3.6-blue.svg)
 ![](https://img.shields.io/badge/package-Tensorflow-blue.svg)
 ![](https://img.shields.io/badge/package-OpenCV_python-blue.svg)
 ## Introduction
 ***
+> - 工具和其他教程[链接](https://hanyuufurude.github.io/)
+> - 一些常用工具/语言/技术的小结。
 > - Tensorflow 从入门到调参（x）
-> - Ps:就是个**萌新**的Deep learning爬坑记录。
 > - markdown中可能存在Latex公式……Github预览暂时不支持该类型公式的显示……所以请自行使用合适的预览/阅读工具。
 ## Note link
 ***
