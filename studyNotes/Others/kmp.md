@@ -122,8 +122,6 @@ void GetNext(char* p,int next[])
 		}
 	}
 }
-``
-
 ```
 
 
