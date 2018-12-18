@@ -1,4 +1,4 @@
-# Hanyuu's tech log.
+# Hanyuu's tech blog.
 [![](https://img.shields.io/github/downloads/atom/atom/total.svg)](https://github.com/HanyuuFurude/TechBlog/archive/master.zip)
 [![](https://img.shields.io/github/issues/HanyuuFurude/TechBlog.svg)](https://github.com/HanyuuFurude/TechBlog/issues)
 [![](https://img.shields.io/github/license/HanyuuFurude/TechBlog.svg)](https://github.com/HanyuuFurude/TechBlog/blob/master/LICENSE)
@@ -35,13 +35,13 @@
 
 
 ### Python
-| Created Date   | Updated Date   | Content                                                                       | Details                      |
-| :------------- | :------------- | :---------------------------------------------------------------------------- | :--------------------------- |
-| 2018.10.07     |                | [PythonFunctionRef](studyNotes/python/PythonFunctionRef/PythonFunctionRef.md) | 还是写一个吧2333             |
-| 2018.10.03     |                | [Python 3.6](https://docs.python.org/3.6/)                                    | 官方文档                     |
-| 2018.10.09     |                | [正则表达式入门](http://www.runoob.com/python3/python3-reg-expressions.html)  | 学一学还是有必要的哈(●ˇ∀ˇ●)  |
-| 2018.10.09     |                | [Requests爬虫入门](https://blog.csdn.net/gyq1998/article/details/78583841)    | 爬虫……也是要爬一爬的(ง •_•)ง |
-| 2018.12.11 |  | [xlrd](studyNotes/python/xlrd.md)                                                         | 处理Excel文档       |
+| Created Date | Updated Date | Content                                                                       | Details                      |
+| :----------- | :----------- | :---------------------------------------------------------------------------- | :--------------------------- |
+| 2018.10.07   |              | [PythonFunctionRef](studyNotes/python/PythonFunctionRef/PythonFunctionRef.md) | 还是写一个吧2333             |
+| 2018.10.03   |              | [Python 3.6](https://docs.python.org/3.6/)                                    | 官方文档                     |
+| 2018.10.09   |              | [正则表达式入门](http://www.runoob.com/python3/python3-reg-expressions.html)  | 学一学还是有必要的哈(●ˇ∀ˇ●)  |
+| 2018.10.09   |              | [Requests爬虫入门](https://blog.csdn.net/gyq1998/article/details/78583841)    | 爬虫……也是要爬一爬的(ง •_•)ง |
+| 2018.12.11   |              | [xlrd](studyNotes/python/xlrd.md)                                             | 处理Excel文档                |
 ### Deep learning
 | Created Date | Updated Date     | Content                                                                                        | Details                                      |
 | :----------- | :--------------- | :--------------------------------------------------------------------------------------------- | :------------------------------------------- |
