@@ -57,9 +57,15 @@
 | :- | :- | :- | :- |
 | 2018.11.29 || [markdown-Latex公式快速查阅](studyNotes/Others/markdownLatex.png) | 写文档也是很重要的. |
 | 2018.12.18 || [简单字符串匹配算法](studyNotes/Others/kmp.md) | |
+| 2018.12.18 |      | [Windows更新缓存](studyNotes/Others/windowsUpdateCacheClear.md) |      |
+
+
 
 ## Log
 ***
+> ### 2018/12/18
+> 画风逐渐奇怪.jpg
+
 > ### 2018/12/03
 > 接着摸约定（好多都忘了.jpg）
 
