@@ -56,6 +56,7 @@
 | Created Date | Updated Date| Content| Details|
 | :- | :- | :- | :- |
 | 2018.11.29 || [markdown-Latex公式快速查阅](studyNotes/Others/markdownLatex.png) | 写文档也是很重要的. |
+| 2018.12.18 || [简单字符串匹配算法](studyNotes/Others/kmp.md) | |
 
 ## Log
 ***
