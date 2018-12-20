@@ -75,4 +75,5 @@
 |                          specialization | 特化          |      |
 |                         inductive study | 归纳学习      |      |
 |                           version space | 版本空间      |      |
+|feature selection|特征选择||
 
