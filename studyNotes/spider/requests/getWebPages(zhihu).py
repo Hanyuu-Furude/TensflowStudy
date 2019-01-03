@@ -7,8 +7,8 @@ headers = \
     }
 res = requests.get('https://www.zhihu.com/explore', headers=headers)
 # print(res.text)
-print(res.content)
-print(res.text)
+# print(res.content)
+# print(res.text)
 pattern = re.compile('explore-feed.*?question_link.*?>(.*?)</a>', re.S)
 
 titles = re.findall(pattern, res.text)
