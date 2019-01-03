@@ -43,13 +43,13 @@
 | 2018.10.09   |              | [Requests爬虫入门](https://blog.csdn.net/gyq1998/article/details/78583841)    | 爬虫……也是要爬一爬的(ง •_•)ง |
 | 2018.12.11   |              | [xlrd](studyNotes/python/xlrd.md)                                             | 处理Excel文档                |
 ### Deep learning
-| Created Date | Updated Date     | Content                                                                                        | Details                                      |
-| :----------- | :--------------- | :--------------------------------------------------------------------------------------------- | :------------------------------------------- |
-| 2018.11.20   | 2018.12.03       | [terminology](studyNotes/deeplearning/terminology.md)                                          | 术语表                                       |
-| 2018.10.03   |                  | [deeplearningbook.org](http://www.deeplearningbook.org/)                                       | 这个不在GFW内                                |
-| 2018.10.03   |                  | [deeplearningbook-chinese](https://github.com/exacity/deeplearningbook-chinese)                | 但是有热心大佬在GFW内翻译了                  |
-| 2018.10.03   |                  | [李弘毅教授的Deep Learning课程页](https://hanyuufurude.github.io/DeepLearing.html)             | 本人整理，若您发现有更新请务必联系我，谢谢。 |
-| 2018.10.03   |                  | [李彦宏的deep learning教程[网易云](http://mooc.study.163.com/smartSpec/detail/1001319001.htm) | 吃我安利（就是没作业，土豪请走coursera）     |
+| Created Date | Updated Date | Content                                                                                       | Details                                      |
+| :----------- | :----------- | :-------------------------------------------------------------------------------------------- | :------------------------------------------- |
+| 2018.11.20   | 2018.12.03   | [terminology](studyNotes/deeplearning/terminology.md)                                         | 术语表                                       |
+| 2018.10.03   |              | [deeplearningbook.org](http://www.deeplearningbook.org/)                                      | 这个不在GFW内                                |
+| 2018.10.03   |              | [deeplearningbook-chinese](https://github.com/exacity/deeplearningbook-chinese)               | 但是有热心大佬在GFW内翻译了                  |
+| 2018.10.03   |              | [李弘毅教授的Deep Learning课程页](https://hanyuufurude.github.io/DeepLearing.html)            | 本人整理，若您发现有更新请务必联系我，谢谢。 |
+| 2018.10.03   |              | [李彦宏的deep learning教程[网易云](http://mooc.study.163.com/smartSpec/detail/1001319001.htm) | 吃我安利（就是没作业，土豪请走coursera）     |
 
 
 ### Others
@@ -64,6 +64,10 @@
 
 ## Log
 ***
+> ## 2019/01/03
+> 经过断断续续的尝试和hs巨巨的帮助终于能用python投递邮件了（开心的一匹）
+> 什么？复习？考试？完球了.jpg
+
 > ### 2019/01/02
 > 在复习的闲暇时光慢慢尝试爬虫.jpg
 > （暂时没精力引出链接写教程了，想看代码的直接顺着文件夹就能找着（ps:我就是想偷下懒嘛~））
@@ -75,7 +79,7 @@
 > 画风逐渐奇怪.jpg
 
 > ### 2018/12/03
-> 
+>
 > 接着摸约定（好多都忘了.jpg）
 
 > ### 2018/11/29
