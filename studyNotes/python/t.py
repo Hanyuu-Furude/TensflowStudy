@@ -1,6 +1,7 @@
 import win32clipboard as w
 import win32con
 import requests
+import json
 import sys
 
 
@@ -14,7 +15,11 @@ def translate(queryString: str)->str:
     res = requests.post("https://fanyi.baidu.com/transapi", form)
     try:
         resjson = res.json()
-        return resjson["data"][0]["dst"]
+        if resjson["type"] == 2:
+            return resjson["data"][0]["dst"]
+        else:
+            for ret in json.loads(resjson["result"])["content"][0]["mean"][0]["cont"]:
+                return ret
     except Exception:
         return None
 
@@ -40,8 +45,8 @@ if __name__ == "__main__":
         # print(i)
         s = s+argv[i]
     res = translate(s)
-    print('[res]===================')
+    print('[翻译结果]===================')
     print(res)
-    print('[已复制到剪切板]===================')
     # res = res.encode('gbk')
     settext(res)
+    print('[已复制到剪切板]===================')
