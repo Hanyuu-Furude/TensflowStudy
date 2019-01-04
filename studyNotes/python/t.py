@@ -43,7 +43,7 @@ if __name__ == "__main__":
     s = ''
     for i in range(1, len(argv)):
         # print(i)
-        s = s+argv[i]
+        s = s + argv[i] + ' '
     res = translate(s)
     print('[翻译结果]===================')
     print(res)

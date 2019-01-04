@@ -12,3 +12,5 @@
 *.exe
 Debug
 .vs
+build
+__pycache__
