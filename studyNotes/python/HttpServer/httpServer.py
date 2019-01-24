@@ -2,7 +2,7 @@
 import socket
 import signal
 import errno
-from time import sleep
+# from time import sleep
 
 
 def HttpResponse(header, whtml):
@@ -54,11 +54,10 @@ while runflag:
             raise
         continue
 
-    if runflag == False:
+    if runflag is False:
         break
 
-    print("[connect]", addr)
-    print('[confd]', confd)
+    print("connect by ", addr)
     data = confd.recv(1024)
     if not data:
         break
