@@ -1,7 +1,6 @@
 #!/usr/bin/python
 import sys
 import time
-# from tkinter import *
 import tkinter as tk
 
 
@@ -9,6 +8,7 @@ class Logger(tk.Frame):
     def __init__(self):
         tk.Frame.__init__(self)
         self.pack(expand=tk.YES, fill=tk.BOTH)
+
         self.master.title("Hanyuu's Timestamp logging application")
         self.tslist = []
         self.tsdisp = tk.Text(height=6, width=25)
