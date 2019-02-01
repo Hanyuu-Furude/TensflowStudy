@@ -20,7 +20,8 @@ W = tf.Variable(tf.zeros([784, 10]))
 b = tf.Variable(tf.zeros([10]))
 
 # 初始化所有变量
-sess.run(tf.initialize_all_variables())
+# sess.run(tf.initialize_all_variables())
+sess.run(tf.global_variables_initializer())
 
 # 计算SoftMax概率值
 y = tf.nn.softmax(tf.matmul(x, W) + b)
