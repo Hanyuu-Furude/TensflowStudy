@@ -69,9 +69,8 @@ for i in range(2000):
             feed_dict={x: batch[0], y_: batch[1], keep_prob: 1.0})
         print('step %d, training accuracy %g' % (i, train_accuracy))
     train_step.run(feed_dict={x: batch[0], y_: batch[1], keep_prob: 0.5})
-testbatch=mnist.test.next_batch(1000)
-print('test accuracy %g' % accuracy.eval(feed_dict={x:testbatch[0], y_: testbatch[1], keep_prob: 1.0}))
+testbatch = mnist.test.next_batch(1000)
+print('test accuracy %g' % accuracy.eval(
+    feed_dict={x: testbatch[0], y_: testbatch[1], keep_prob: 1.0}))
 # print('text accuracy %g' % accuracy.eval(feed_dict={x: mnist.test.images, y_: mnist.test.labels, keep_prob: 1.0}))
 # 注释上一句并使用前一种测试方法原因：设备显存不够用.jpg
-
-
