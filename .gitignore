@@ -14,3 +14,4 @@ Debug
 .vs
 build
 __pycache__
+.idea
