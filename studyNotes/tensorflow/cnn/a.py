@@ -4,7 +4,6 @@ import tensorflow as tf
 import sys
 import os
 # from __future__ import division
-# import division
 # %matplotlib inline
 
 
