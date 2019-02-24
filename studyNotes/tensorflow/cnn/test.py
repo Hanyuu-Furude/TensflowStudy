@@ -13,8 +13,8 @@ slim = tf.contrib.slim
 
 # from nets import vgg
 from tensorflow.contrib.slim.nets import vgg
-from preprocessing import vgg_preprocessing
-
+# from preprocessing import vgg_preprocessing
+from keras_preprocessing import vgg_preprocessing
 # 加载像素均值以及为每个像素进行减法运算的函数
 from preprocessing.vgg_preprocessing import (_mean_image_subtraction,
                                             _R_MEAN, _G_MEAN, _B_MEAN)
