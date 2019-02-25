@@ -79,3 +79,12 @@ model.fit(data, labels, epochs=10, batch_size=32)
 # epochs：以周期为单位进行训练。一个周期是对整个输入数据的一次迭代（以较小的批次完成迭代）。
 # batch_size：当传递 NumPy 数据时，模型将数据分成较小的批次，并在训练期间迭代这些批次。此整数指定每个批次的大小。请注意，如果样本总数不能被批次大小整除，则最后一个批次可能更小。
 # validation_data：在对模型进行原型设计时，您需要轻松监控该模型在某些验证数据上达到的效果。传递此参数（输入和标签元组）可以让该模型在每个周期结束时以推理模式显示所传递数据的损失和指标。
+
+data = np.random.random((1000, 32))
+labels = np.random.random((1000, 10))
+
+val_data = np.random.random((100, 32))
+val_labels = np.random.random((100, 10))
+
+model.fit(data, labels, epochs=10, batch_size=32,
+          validation_data=(val_data, val_labels))
