@@ -8,6 +8,7 @@ class ui(QMainWindow):
     def __init__(self):
         super().__init__()
 
+        # code to get and draw ui
         self.autoRead = True
         self.autoWrite = True
         # self=QMainWindow()
@@ -20,15 +21,16 @@ class ui(QMainWindow):
         # print(ui.findChild(QCheckBox, 'checkBoxR').checked())
         self.show()
 
-
+    # checkBox function
     def checkBoxChanged(self, state):
-        print(self.sender())
         if self.sender() == self.checkBoxR:
-            self.autoRead = state
+            self.autoRead = True if(state == 2) else False
         elif self.sender() == self.checkBoxW:
-            self.autoWrite = state
-        print(self.autoRead)
-        print(self.autoWrite)
+            self.autoWrite = True if (state == 2) else False
+        print('[auto read]', self.autoRead)
+        print('[suto write]', self.autoWrite)
+
+
 if __name__ == '__main__':
     app = QApplication(sys.argv)
     run = ui()
