@@ -3,6 +3,7 @@ import win32con
 import requests
 import json
 import sys
+import chardet
 
 
 def translate(queryString: str)->str:
@@ -25,17 +26,24 @@ def translate(queryString: str)->str:
 
 
 def gettext():
-    w.OpenClipboard()
-    t = w.GetClipboardData(win32con.CF_TEXT)
-    w.CloseClipboard()
-    return t
+    try:
+        w.OpenClipboard()
+        t = w.GetClipboardData(win32con.CF_TEXT)
+        w.CloseClipboard()
+        t = t.decode('gbk')
+        return t
+    except Exception as e:
+        print(e)
+        return None
+
 
 
 def settext(aString):
-    w.OpenClipboard()
-    w.EmptyClipboard()
-    w.SetClipboardData(win32con.CF_UNICODETEXT, aString)
-    w.CloseClipboard()
+    if aString is not None:
+        w.OpenClipboard()
+        w.EmptyClipboard()
+        w.SetClipboardData(win32con.CF_UNICODETEXT, aString)
+        w.CloseClipboard()
 
 
 if __name__ == "__main__":

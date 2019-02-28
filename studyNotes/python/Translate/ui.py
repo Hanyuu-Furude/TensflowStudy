@@ -8,7 +8,8 @@ import t
 class ui(QMainWindow):
     def __init__(self):
         super().__init__()
-
+        self.res = None
+        self.text = None
         # code to get and draw ui
         self.autoRead = True
         self.autoWrite = True
@@ -21,11 +22,10 @@ class ui(QMainWindow):
         self.textRead = self.findChild(QPlainTextEdit,'textOrigin')
         self.textWrite = self.findChild(QPlainTextEdit,'textTranslate')
         self.buttonExit = self.findChild(QPushButton,'buttonExit')
-        # self.buttonExit.clicked.connect(QCoreApplication.exit)  # button on exit
-        self.buttonExit.clicked.connect(self.text)  # button on exit
+        self.buttonExit.clicked.connect(QCoreApplication.exit)  # button on exit
         self.timer = QTimer(self) #初始化一个定时器
         self.timer.timeout.connect(self.translate) #计时结束调用operate()方法
-        # self.timer.start(1000) #设置计时间隔并启动
+        self.timer.start(1000) #设置计时间隔并启动
         self.show()
 
     # checkBox function
@@ -53,23 +53,36 @@ class ui(QMainWindow):
         self.textWrite.appendPlainText(text)
         return text
 
-    
+
     def translate(self):
-        # if self.autoRead:
-        #     print(t.gettext())
-        #     self.setPlainText(str(t.gettext()))
-        temp = self.setPlainText(t.translate(self.fetchPlainText()))
-        # if self.autoWrite:
-        #     t.settext(temp)
+        if self.autoRead is True:
+            text = self.readClipboard()
+            if text is None or text == self.res:
+                return
+            self.textRead.clear()
+            self.textRead.appendPlainText(text)
+        else:
+            text = self.fetchPlainText()
+        if text == self.text:
+            return
+        else:
+            self.text = text
+        print('text:',text)
+        if text is None:
+            self.setPlainText('[empty]')
+            return
+        elif text==self.res:
+            return
+        self.res = self.setPlainText(t.translate(text))
+        print('res', self.res)
+        self.setPlainText(self.res)
+        if self.autoWrite is True:
+            self.writeClipboard(self.res)
 
     def readClipboard(self):
         return t.gettext()
     def writeClipboard(self,text):
         t.settext(text)
-    def text(self):
-        a = self.readClipboard()
-        b = t.translate(a)
-        self.writeClipboard(b)
 if __name__ == '__main__':
     app = QApplication(sys.argv)
     run = ui()
