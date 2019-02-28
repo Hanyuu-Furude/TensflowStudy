@@ -2,7 +2,8 @@ import sys
 from PyQt5 import QtCore, QtGui
 from PyQt5.QtWidgets import QApplication, QWidget, QMainWindow, QCheckBox, QLabel, QPlainTextEdit, QPushButton
 from PyQt5.uic import loadUi
-from PyQt5.QtCore import QCoreApplication
+from PyQt5.QtCore import QCoreApplication, QTimer
+import t
 
 class ui(QMainWindow):
     def __init__(self):
@@ -20,7 +21,11 @@ class ui(QMainWindow):
         self.textRead = self.findChild(QPlainTextEdit,'textOrigin')
         self.textWrite = self.findChild(QPlainTextEdit,'textTranslate')
         self.buttonExit = self.findChild(QPushButton,'buttonExit')
-        self.buttonExit.clicked.connect(QCoreApplication.exit)  # button on exit
+        # self.buttonExit.clicked.connect(QCoreApplication.exit)  # button on exit
+        self.buttonExit.clicked.connect(self.text)  # button on exit
+        self.timer = QTimer(self) #初始化一个定时器
+        self.timer.timeout.connect(self.translate) #计时结束调用operate()方法
+        # self.timer.start(1000) #设置计时间隔并启动
         self.show()
 
     # checkBox function
@@ -48,8 +53,24 @@ class ui(QMainWindow):
         self.textWrite.appendPlainText(text)
         return text
 
+    
+    def translate(self):
+        # if self.autoRead:
+        #     print(t.gettext())
+        #     self.setPlainText(str(t.gettext()))
+        temp = self.setPlainText(t.translate(self.fetchPlainText()))
+        # if self.autoWrite:
+        #     t.settext(temp)
 
-
+    def readClipboard(self):
+        return t.gettext()
+    def writeClipboard(self,text):
+        t.settext(text)
+    def text(self):
+        a = self.readClipboard()
+        a=str(a)
+        b = t.translate(a)
+        self.writeClipboard(b)
 if __name__ == '__main__':
     app = QApplication(sys.argv)
     run = ui()

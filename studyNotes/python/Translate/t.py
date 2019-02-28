@@ -26,7 +26,7 @@ def translate(queryString: str)->str:
 
 def gettext():
     w.OpenClipboard()
-    t = w.GetClipboardData(win32con.CF_TEXT)
+    t = w.GetClipboardData(win32con.CF_UNICODETEXT)
     w.CloseClipboard()
     return t
 
