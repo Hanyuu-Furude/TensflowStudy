@@ -68,7 +68,6 @@ class ui(QMainWindow):
         t.settext(text)
     def text(self):
         a = self.readClipboard()
-        a=str(a)
         b = t.translate(a)
         self.writeClipboard(b)
 if __name__ == '__main__':
