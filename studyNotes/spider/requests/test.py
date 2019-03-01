@@ -11,8 +11,8 @@ headers = \
 form = \
     {
         'enablemacauth': 0,
-        'password': base64.b64encode(b'ej1ime3qlyr4'),
-        'username': '213173051'
+        'password': base64.b64encode(b''),
+        'username': ''
     }
 
 if __name__ == '__main__':
