@@ -1,0 +1,41 @@
+\documentclass[12pt, a4papper]{ctexart}
+ \usepackage[utf8]{inputenc}
+ \usepackage{comment}
+ \usepackage[colorlinks,linkcolor = blue]{hyperref}
+ \usepackage{amsmath}
+
+% Title
+\title{Hanyuu Document}
+\author{Hanyuu Furude}
+\date{\today}
+\begin{document}
+\begin{titlepage}
+\maketitle
+\end{titlepage}
+\pagenumbering{arabic}
+\tableofcontents
+Object 01
+Object 02
+\begin{abstract}
+This is a simple paragraph at the beginning of the document. A brief introduction about the main subject.  \\
+这是文档开头的一个简单段落。关于主要主题的简要介绍。
+\end{abstract}
+First document. This is a simple example, with no extra parameters or packages included.\\
+同样支持数学公式哦。\\
+行内公式样式：$\sum_{i=1}^{n}sin\left(i\right)$\\
+行间公式样式：$$\sum_{i=1}^{n}sin\left(i\right)$$\\
+组合公式：
+\begin{equation}
+		\oint_{0}^{1}x^{3.2}
+\end{equation}
+\begin{equation}
+	\frac{\sqrt[3.14]{x^2}}{\lceil a \rceil}
+\end{equation}\\
+\href{https://hanyuufurude.github.io/Others/Latex/}{有关公式语法，请参阅}\\
+\href{mailto:Furude_Hanyuu@outlook.com}{有问题？联系我}\\
+\setcounter{page}{page number}
+% Comments
+\begin{comment}
+This text won't show up in the compiled pdf this is just a multi-line comment. Useful to, for instance, comment out slow-rendering while working on the draft.
+\end{comment}
+\end{document}
