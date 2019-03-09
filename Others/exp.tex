@@ -3,6 +3,8 @@
  \usepackage{comment}
  \usepackage[colorlinks,linkcolor = blue]{hyperref}
  \usepackage{amsmath}
+ \usepackage{enumitem}
+ \usepackage{xcolor}
 
 % Title
 \title{Hanyuu Document}
@@ -14,8 +16,12 @@
 \end{titlepage}
 \pagenumbering{arabic}
 \tableofcontents
-Object 01
-Object 02
+\begin{enumerate}
+
+	\item miaomiaomiao
+	\item wangwangwang
+	\item tingtingting
+\end{enumerate}
 \begin{abstract}
 This is a simple paragraph at the beginning of the document. A brief introduction about the main subject.  \\
 这是文档开头的一个简单段落。关于主要主题的简要介绍。
@@ -31,9 +37,36 @@ First document. This is a simple example, with no extra parameters or packages i
 \begin{equation}
 	\frac{\sqrt[3.14]{x^2}}{\lceil a \rceil}
 \end{equation}\\
+\footnote{Provider:Hanyuu Furude}
+\footnote{Skylark Studio}
+\begin{center}
 \href{https://hanyuufurude.github.io/Others/Latex/}{有关公式语法，请参阅}\\
-\href{mailto:Furude_Hanyuu@outlook.com}{有问题？联系我}\\
-\setcounter{page}{page number}
+\fbox{
+	\parbox{\textwidth}{
+		\begin{center}
+			\href{mailto:Furude_Hanyuu@outlook.com}{有问题？联系我}\\
+		\end{center}
+	}
+}
+\end{center}
+\newpage
+\noindent\title{字号与颜色}\\
+{\tiny Hello}\\
+{\scriptsize Hello}\\
+{\footnotesize Hello}\\
+{\small Hello}\\
+{\normalsize Hello}\\
+{\large Hello}\\
+{\Large Hello}\\
+{\LARGE Hello}\\
+{\huge Hello}\\
+{\Huge Hello}\\
+\textcolor[RGB]{255,0,0}{Red}
+\textcolor[RGB]{0,255,0}{Green}
+\textcolor[RGB]{0,0,255}{Red}
+
+\setcounter{page}{2}
+\newpage
 % Comments
 \begin{comment}
 This text won't show up in the compiled pdf this is just a multi-line comment. Useful to, for instance, comment out slow-rendering while working on the draft.
