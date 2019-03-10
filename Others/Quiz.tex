@@ -1,0 +1,82 @@
+\documentclass[12pt]{exam}
+
+\usepackage[utf8]{inputenc}  % For UTF8 source encoding.
+\usepackage{amsmath}  % For displaying math equations.
+\usepackage{amsfonts} % For mathematical fonts (like \mathbb{E}!).
+\usepackage{upgreek}  % For upright Greek letters, such as \upvarphi.
+\usepackage{wasysym}  % For additional glyphs (like \smiley!).
+% For document margins.
+\usepackage[left=.8in, right=.8in, top=1in, bottom=1in]{geometry}
+\usepackage{lastpage} % For a reference to the number of pages.
+\usepackage{graphicx}
+
+% TODO: Enter your name here :)
+\newcommand*{\authorname}{[Your name goes here]}
+
+\newcommand*{\psetnumber}{1}
+\newcommand*{\psetdescription}{Big $O$ notation and Time Complexity}
+\newcommand*{\duedate}{Mar 14th, 2019}
+\newcommand*{\duetime}{11:59 pm}
+
+% Fancy headers and footers
+\headrule
+\firstpageheader{B0910090}{Assignment \psetnumber\\\psetdescription}{\authorname}
+\runningheader{B0910090}{Project \psetnumber}{\authorname}
+%\runningheader{B0910090}{Project \psetnumber}{Due: \duedate\\at \duetime}
+\footer{}{\footnotesize{Page \thepage\ of \pageref{LastPage}}}{}
+
+% Exam questions.
+\newcommand{\Q}[1]{\question{\large{\textbf{#1}}}}
+\qformat{}  % Remove formatting from exam questions.
+
+% Useful macro commands.
+\newcommand*{\ex}{\mathbb{E}}
+\newcommand*{\bigtheta}[1]{\Theta\left( #1 \right)}
+\newcommand*{\bigo}[1]{O \left( #1 \right)}
+\newcommand*{\bigomega}[1]{\Omega \left( #1 \right)}
+\newcommand*{\prob}[1]{\text{Pr} \left[ #1 \right]}
+\newcommand*{\var}[1]{\text{Var} \left[ #1 \right]}
+
+% Custom formatting for problem parts.
+\renewcommand{\thepartno}{\roman{partno}}
+\renewcommand{\partlabel}{\thepartno.}
+
+% Framed answers.
+\newcommand{\answerbox}[1]{
+\begin{framed}
+\hspace{\fill}
+\vspace{#1}
+\end{framed}}
+
+\printanswers
+
+\setlength\answerlinelength{2in} \setlength\answerskip{0.3in}
+
+\begin{document}
+\title{Assignment \psetnumber: \psetdescription}
+%\author{\authorname}
+\date{}
+\maketitle
+\thispagestyle{headandfoot}
+
+\begin{questions}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\Q{Problem Description}
+
+What are the best, average, and worst runtimes (number of comparisons) to run Bubble Sort on an array? (Answers with proofs). Please submit the pdf version to assistant.
+
+
+\begin{figure}[h]%%图
+	\centering  %插入的图片居中表示
+	%\includegraphics[width=0.7\linewidth]{}  %插入的图，包括JPG,PNG,PDF,EPS等，放在源文件目录下
+	\caption{Examples of Bubble Sort.}  %图片的名称
+	\label{fig:zsl}   %标签，用作引用
+\end{figure}
+
+\begin{solution}
+	You can write the proof here
+\end{solution}
+
+
+\end{questions}
+\end{document}
