@@ -5,4 +5,4 @@
 * 同时我们也有一个更短的域名帮助您快速访问（重定向）[hanyuu.ml](https://hanyuu.ml)
 
 
-![Hanyuu](studyNotes/rm.png)
+![Hanyuu](res/rm.png)
